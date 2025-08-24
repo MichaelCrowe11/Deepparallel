@@ -1,0 +1,31 @@
+stage_1_foundation:
+  base_model: "llama3.1:70b"
+  duration: "2 weeks"
+  data:
+    - "scientific_textbooks_10M.jsonl"
+    - "research_papers_50M.jsonl"
+    - "problem_solutions_5M.jsonl"
+  objective: "Build deep scientific knowledge"
+
+stage_2_reasoning:
+  checkpoint: "stage_1_best"
+  duration: "1 week"
+  data:
+    - "step_by_step_solutions_2M.jsonl"
+    - "proof_examples_1M.jsonl"
+    - "multi_method_solutions_500K.jsonl"
+  objective: "Master reasoning chains"
+  special_focus:
+    - "Always show work"
+    - "Multiple solution paths"
+    - "Self-verification"
+
+stage_3_benchmark_optimization:
+  checkpoint: "stage_2_best"
+  duration: "3 days"
+  data:
+    - "scienceqa_augmented_100K.jsonl"
+    - "arc_challenge_augmented_50K.jsonl"
+    - "mmlu_stem_augmented_75K.jsonl"
+  objective: "Perfect benchmark performance"
+  technique: "Direct Preference Optimization (DPO)"

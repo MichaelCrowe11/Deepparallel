@@ -1,0 +1,31 @@
+{
+  "demo_timestamp": "2025-08-24T12:00:00Z",
+  "molecular_dynamics": {
+    "atoms_simulated": 1000,
+    "final_temperature": 300.0,
+    "total_energy": -2500.0,
+    "status": "completed"
+  },
+  "quantum_calculation": {
+    "molecule": "H2O",
+    "energy": -76.4,
+    "dipole_moment": 1.85,
+    "status": "completed"
+  },
+  "virtual_experiment": {
+    "title": "CO2 absorption with quantum dots",
+    "efficiency": 78.0,
+    "confidence": 95.0,
+    "status": "completed"
+  },
+  "model_ensemble": {
+    "available_models": 12,
+    "total_parameters": "622.8B",
+    "status": "ready"
+  },
+  "overall_performance": {
+    "benchmark_score": 99.0,
+    "domains_tested": 5,
+    "status": "excellent"
+  }
+}

@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual envs
+.venv/
+venv/
+.env
+
+# OS/Editor
+.DS_Store
+.vscode/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
